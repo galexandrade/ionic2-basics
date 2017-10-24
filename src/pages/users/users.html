@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>users</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="onLoadUser('Alex')">User 'Alex'</button>
+
+  <!-- Not working -->
+  <button ion-button [navPush]="usrPage" [navParams]="{userName: 'Max'}">User 'Max'</button>
+
+  
+  <button ion-button navPop>Go Back</button>
+</ion-content>
